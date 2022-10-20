@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDII_LAB_05", "EDII_LAB_05\EDII_LAB_05.csproj", "{883ABDC6-F337-40FD-AC33-6C4FDE111336}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARBOL_AVL", "ARBOL_AVL\ARBOL_AVL.csproj", "{7725C48E-2AEC-4230-A332-CCA3F96E33AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huffman", "Huffman\Huffman.csproj", "{CE48D9FC-93E2-4557-8086-A59844BD3815}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{883ABDC6-F337-40FD-AC33-6C4FDE111336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{883ABDC6-F337-40FD-AC33-6C4FDE111336}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{883ABDC6-F337-40FD-AC33-6C4FDE111336}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7725C48E-2AEC-4230-A332-CCA3F96E33AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7725C48E-2AEC-4230-A332-CCA3F96E33AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7725C48E-2AEC-4230-A332-CCA3F96E33AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7725C48E-2AEC-4230-A332-CCA3F96E33AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE48D9FC-93E2-4557-8086-A59844BD3815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE48D9FC-93E2-4557-8086-A59844BD3815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE48D9FC-93E2-4557-8086-A59844BD3815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE48D9FC-93E2-4557-8086-A59844BD3815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
