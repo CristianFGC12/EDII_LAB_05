@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{883ABDC6-F337-40FD-AC33-6C4FDE111336}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>EDII_LAB_05</RootNamespace>
-    <AssemblyName>EDII_LAB_05</AssemblyName>
+    <ProjectGuid>{BEB696D4-A919-4562-8870-ACEE8B6E98DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RSA</RootNamespace>
+    <AssemblyName>RSA</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.7.100\lib\net45\AWSSDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,36 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Compania.cs" />
-    <Compile Include="Models\Ingreso.cs" />
-    <Compile Include="Models\Solicitante.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ARBOL_AVL\ARBOL_AVL.csproj">
-      <Project>{7725c48e-2aec-4230-a332-cca3f96e33ab}</Project>
-      <Name>ARBOL_AVL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Huffman\Huffman.csproj">
-      <Project>{ce48d9fc-93e2-4557-8086-a59844bd3815}</Project>
-      <Name>Huffman</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LZW\LZW.csproj">
-      <Project>{98ccc787-1cec-4337-8ff7-3cade3752aaf}</Project>
-      <Name>LZW</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RSA\RSA.csproj">
-      <Project>{beb696d4-a919-4562-8870-acee8b6e98da}</Project>
-      <Name>RSA</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
